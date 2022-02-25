@@ -37,16 +37,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const Item = ({title}) => (
-  <TouchableWithoutFeedback onPress={() => alert('Pressed!')}>
-    <View style={styles.item}>
-      <Text style={styles.title}>{title}</Text>
-    </View>
-  </TouchableWithoutFeedback>
-);
-
-export const Home = () => {
+export const Home = ({navigation}) => {
   const isDarkMode = useColorScheme() === 'dark';
+
+  const Item = ({title, screen}) => (
+    <TouchableWithoutFeedback onPress={() => navigation.push(screen)}>
+      <View style={styles.item}>
+        <Text style={styles.title}>{title}</Text>
+      </View>
+    </TouchableWithoutFeedback>
+  );
 
   return (
     <SafeAreaView style={styles.safeAreaView}>
@@ -58,8 +58,9 @@ export const Home = () => {
           renderSectionHeader={({section: {title}}) => (
             <Text style={styles.header}>{title}</Text>
           )}
-          renderItem={({item}) => <Item title={item} />}
-          st
+          renderItem={({item}) => (
+            <Item title={item.title} screen={item.screen} />
+          )}
         />
       </View>
     </SafeAreaView>
