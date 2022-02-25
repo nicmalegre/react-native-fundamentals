@@ -8,6 +8,7 @@ import {ExerciseTwo} from './src/screens/ExerciseTwo';
 import {ExerciseThree} from './src/screens/ExerciseThree';
 import {ExerciseFour} from './src/screens/ExerciseFour';
 import {ExerciseFive} from './src/screens/ExerciseFive';
+import {ExerciseSix} from './src/screens/ExerciseSix';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const App = () => {
         <Stack.Screen name="ExerciseThree" component={ExerciseThree} />
         <Stack.Screen name="ExerciseFour" component={ExerciseFour} />
         <Stack.Screen name="ExerciseFive" component={ExerciseFive} />
+        <Stack.Screen name="ExerciseSix" component={ExerciseSix} />
       </Stack.Navigator>
     </NavigationContainer>
   );
