@@ -13,6 +13,7 @@ import {ExerciseSeven} from './src/screens/ExerciseSeven';
 import {ExerciseEight} from './src/screens/ExerciseEight';
 import {ExerciseNine} from './src/screens/ExerciseNine';
 import {ExerciseTen} from './src/screens/ExerciseTen';
+import ExerciseEleven from './src/screens/ExerciseEleven';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,7 @@ const App = () => {
         <Stack.Screen name="ExerciseEight" component={ExerciseEight} />
         <Stack.Screen name="ExerciseNine" component={ExerciseNine} />
         <Stack.Screen name="ExerciseTen" component={ExerciseTen} />
+        <Stack.Screen name="ExerciseEleven" component={ExerciseEleven} />
       </Stack.Navigator>
     </NavigationContainer>
   );
