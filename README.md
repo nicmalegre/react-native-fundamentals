@@ -54,7 +54,7 @@ Upon component mount, start listening to the listener. Store in state how many t
 
 
 
-MORE INFO: 
+## MORE INFO
 - https://hackernoon.com/12-fun-challenges-to-learn-react-native-1m4g3egq
 - https://github.com/ReactNativeSchool/react-native-fundamentals
 
